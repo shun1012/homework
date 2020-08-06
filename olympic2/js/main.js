@@ -1,0 +1,3 @@
+$('.keyvisual').slick({
+  dots: true
+});
