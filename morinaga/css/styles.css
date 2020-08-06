@@ -241,3 +241,31 @@ table {
 .footer-lower-right {
   text-align: right;
 }
+/*モーダル*/
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+}
+
+.modal-overlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(0,0,0,0.65);
+  z-index: 1;
+}
+
+.modal-open,
+.modal-close {
+  cursor: pointer;
+}
