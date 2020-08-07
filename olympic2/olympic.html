@@ -4,9 +4,13 @@
     <meta charset="utf-8">
     <title>２回目のオリンピック模写</title>
     <link rel="stylesheet" href="css/olympic.css">
-
+    <!-- slickの読み込み -->
     <link rel="stylesheet" href="css/slick.css"/>
-<link rel="stylesheet" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="css/slick-theme.css"/>
+    <!-- modal -->
+    <link rel="stylesheet" href="modal/modaal.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="modal/modaal.min.js"></script>
   <body>
     <div id="header">
       <div class="header-top">
@@ -69,7 +73,10 @@
       </div>
       <div class="under">
         <p>ワイルドオリンピックパートナー</p>
-        <img src="images/logo5.jpg" width="155px" alt="">
+        <a href="#modal" class="modal"><img src="images/logo5.jpg" width="155px" alt=""></a>
+        <div id="modal" style="display:none;">
+           <p>モーダルできた！！！！！</p>
+        </div>
         <img src="images/logo5.jpg" width="155px"alt="">
         <img src="images/logo5.jpg" width="155px"alt="">
         <img src="images/logo5.jpg" width="155px"alt="">
@@ -157,5 +164,8 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript">
+      $('.moda').modal();
+    </script>
   </body>
 </html>
