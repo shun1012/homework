@@ -1,12 +1,12 @@
 <?php
 
-function sum($a,$b)
-{
-  echo $a
-}
-
-sum(1,10)
-sum(21,100)
+// function sum($a,$b)
+// {
+//   echo $a
+// }
+//
+// sum(1,10)
+// sum(21,100)
 
 
 // 1~10までの整数の和
