@@ -1,14 +1,5 @@
 <?php
 
-// function sum($a,$b)
-// {
-//   echo $a
-// }
-//
-// sum(1,10)
-// sum(21,100)
-
-
 // 1~10までの整数の和
 $sum = 0;
 
@@ -72,5 +63,34 @@ for ($c=1; $c<=100; $c++) {
 // }
 // echo $d;
 // echo "\n";
+
+
+// 1~10までの整数の和をメソッド化
+// function first($e,$f)
+// {
+//   $sum4 = 0;
+//   for ($g=$e; $g<=$f; $g++)
+//    {
+//      $sum4 += $g;
+//    }
+//
+// }
+//
+// first(1,10);
+// echo '1~10までの和：'.$sum4;
+// echo "\n";
+//
+
+練習
+function job($syokugyo = "社会人")
+{
+  return "職業は　$syokugyo です。";
+}
+echo job();
+echo "\n";
+echo job("大学生");
+echo "\n";
+
+
 
  ?>
