@@ -3,19 +3,18 @@
 // 1~10までの整数の和
 $sum = 0;
 
- for ($i=1; $i<=10; $i++) {
-   $sum += $i;
+for ($i=1; $i<=10; $i++) {
+  $sum += $i;
+}
 
- }
-
- echo '1~10までの和：'.$sum;
- echo "\n";
+echo '1~10までの和：'.$sum;
+echo "\n";
 
  // ２１~１００までの整数の和
 $sum2 = 0;
 
 for ($a=21; $a<=100; $a++) {
-  $sum2 +=$a;
+  $sum2 += $a;
 }
 
 echo '2~100までの和：'.$sum2;
@@ -24,8 +23,8 @@ echo "\n";
 //1~10までの積
 $sum3 = 1;
 
-for ($b=1; $b<=10;$b++) {
-  $sum3 *=$b;
+for ($b=1; $b<=10; $b++) {
+  $sum3 *= $b;
 }
 echo '1~10までの積：'.$sum3;
 echo "\n";
@@ -33,24 +32,24 @@ echo "\n";
 //２１~１００までの積
 $sum3 = 1;
 
-for ($b=21; $b<=100;$b++) {
-  $sum3 *=$b;
+for ($b=21; $b<=100; $b++) {
+  $sum3 *= $b;
 }
 echo '21~100までの積：'.$sum3;
 echo "\n";
 
 // FizzBuzz問題
 for ($c=1; $c<=100; $c++) {
-  if ($c % 3 == 0 && $c % 5 ==0) {
+  if ($c % 3 == 0 && $c % 5 == 0) {
     echo 'FizzBuzz';
     echo "\n";
-  }else if ($c % 5 ==0) {
+  } else if ($c % 5 == 0) {
     echo 'Buzz';
     echo "\n";
-  }else if ($c % 3 == 0) {
+  } else if ($c % 3 == 0) {
     echo 'Fizz';
     echo "\n";
-  }else {
+  } else {
     echo $c;
     echo "\n";
   }
