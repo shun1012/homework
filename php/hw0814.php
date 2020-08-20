@@ -61,29 +61,16 @@ $i1 = 0;
 $i2 = 1;
 $i3 = 0;
 
-while ($i3 <= 10) {
+while ($i3 <= 500) {
   $i3 = $i1 + $i2;
 
+  echo $i3;
+  echo "\n";
+
+  $i1 = $i2;
+  $i2 = $i3;
 }
-echo $i3;
-echo "\n";
 
-
-// 1~10までの整数の和をメソッド化
-// function first($e,$f)
-// {
-//   $sum4 = 0;
-//   for ($g=$e; $g<=$f; $g++)
-//    {
-//      $sum4 += $g;
-//    }
-//
-// }
-//
-// first(1,10);
-// echo '1~10までの和：'.$sum4;
-// echo "\n";
-//
 
 // 練習
 function job($syokugyo = "社会人")
@@ -95,6 +82,46 @@ echo "\n";
 echo job("大学生");
 echo "\n";
 
+// return
+function ko($a) {
+    return $a.'shun';
+}
+
+ $s = ko('koyama');
+ echo $s;
+echo "\n";
+
+
+
+function go($name) {
+  return $name.'hiroki';
+}
+
+$m = go('ootuka');
+echo $m;
+echo "\n";
+
+
+
+function sum($i) {
+  return $i+$i+$i;
+}
+
+$tu = sum(10);
+
+echo $tu;
+echo "\n";
+
+
+
+function name($w) {
+  echo 'こんにちは'.$w.'さん';
+  echo "\n";
+  echo "こんにちは $w さん";
+  echo "\n";
+}
+
+name('shun');
 
 
  ?>
