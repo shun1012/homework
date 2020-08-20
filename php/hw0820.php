@@ -17,7 +17,7 @@ for ($a=21; $a<=100; $a++) {
   $sum2 += $a;
 }
 
-echo '2~100までの和：'.$sum2;
+echo '21~100までの和：'.$sum2;
 echo "\n";
 
 //1~10までの積
@@ -81,6 +81,30 @@ echo job();
 echo "\n";
 echo job("大学生");
 echo "\n";
+
+//整数の和をメゾット化
+function wa($syou,$dai) {
+  for ($i=$syou; $i<=$dai; $i++) {
+    $sum4 += $i;
+  }
+  return $sum4;
+}
+
+echo wa(1,10);
+echo "\n";
+
+//1~10までの積
+function seki($small,$big) {
+  $sum5 = 1;
+
+  for ($b=$small; $b<=$big; $b++) {
+    $sum5 *= $b;
+  }
+  return $sum5;
+}
+echo seki(1,10);
+echo "\n";
+
 
 // // return
 // function ko($a) {
