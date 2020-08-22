@@ -17,29 +17,57 @@
       echo 'コンピューターが出したのは'.$random;
       echo "\n";
 
-      if ($janken == $random) {
-        echo '引き分けです';
-      } 
-
-      // switch ($jankenPC) {
-      //   case '1':
-      //     echo 'コンピューターはグーを出しました';
-      //     echo "\n";
-      //     break;
-      //
-      //   case '2':
-      //     echo 'コンピューターはチョキを出しました';
-      //     echo "\n";
-      //     break;
-      //
-      //   case '3':
-      //     echo 'コンピューターはパーを出しました';
-      //     echo "\n";
-      //     break;
-      //
-      //   default:
-      //
+      // if ($janken == $random) {
+      //   echo '引き分けです';
       // }
+
+      switch ($jankenPC) {
+        case ($janken == "グー" && $random =="グー"):
+          echo '引き分けです';
+          echo "\n";
+          break;
+
+        case ($janken == "グー" && $random =="チョキ"):
+          echo '勝ち';
+          echo "\n";
+          break;
+
+        case ($janken == "グー" && $random =="パー"):
+          echo '負け';
+          echo "\n";
+          break;
+
+        case ($janken == "チョキ" && $random =="チョキ"):
+          echo '引き分けです';
+          echo "\n";
+          break;
+
+        case ($janken == "チョキ" && $random =="パー"):
+          echo '勝ち';
+          echo "\n";
+          break;
+
+        case ($janken == "チョキ" && $random =="グー"):
+          echo '負け';
+          echo "\n";
+          break;
+
+        case ($janken == "パー" && $random =="パー"):
+          echo '引き分けです';
+          echo "\n";
+          break;
+
+        case ($janken == "パー" && $random =="グー"):
+          echo '勝ち';
+          echo "\n";
+          break;
+
+        case ($janken == "パー" && $random =="チョキ"):
+          echo '負け';
+          echo "\n";
+          break;
+
+      }
 
 
 
