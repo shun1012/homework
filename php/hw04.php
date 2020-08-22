@@ -191,4 +191,200 @@ $chi->food('レーズン');
 $mam->drink('コーラ');
 
 
+// 継承練習２
+class yakinikuClass {
+  public function ushi($bui) {
+    echo $bui.'が好きです';
+    echo "\n";
+  }
+  public function buta($syurui) {
+    echo $syurui.'が好きです';
+    echo "\n";
+  }
+}
+class sakanaClass extends yakinikuClass {
+  public function ushi($bui) {
+    echo $bui.'より魚が好きです';
+    echo "\n";
+  }
+}
+$meat = new yakinikuClass();
+$fish = new sakanaClass();
+
+$meat->ushi('タン塩');
+$meat->buta('豚トロ');
+$fish->ushi('肉');
+
+
+// 抽象クラス
+abstract class AbstractClass
+{
+  // 抽象メソッドの定義をする
+  abstract protected function getvalue();
+  abstract protected function gettext($str);
+
+  // メソッドの定義
+  public function thisClass() {
+    echo $this->getvalue();
+    echo "\n";
+  }
+}
+
+class SampleClass1 extends AbstractClass
+{
+  protected function getvalue() {
+    return "サンプルクラス１";
+  }
+  public function gettext($str) {
+    return $str.'サンプルクラス１';
+  }
+}
+
+class SampleClass2 extends AbstractClass
+{
+  public function getvalue() {
+    return "サンプルクラス２";
+  }
+  public function gettext($str) {
+    return $str.'サンプルクラス２';
+  }
+}
+
+$class1 = new SampleClass1;  // ()がいらない
+$class2 = new SampleClass2;
+
+$class1->thisClass();
+echo $class1->gettext('侍');
+echo "\n";
+$class2->thisClass();
+echo $class2->gettext('エンジニア');
+echo "\n";
+
+
+// 抽象化練習
+abstract class aboutClass {
+  abstract protected function sushi();
+  abstract protected function tenpura($yasai);
+
+  public function thisclass() {
+    echo $this->sushi();
+    echo "\n";
+  }
+}
+
+class tyuusyouClass1 extends aboutClass {
+  protected function sushi() {
+    return "大好き";
+  }
+  public function tenpura($yasai) {
+    return $yasai.'天ぷらも好きです';
+  }
+}
+
+class tyuusyouClass2 extends aboutClass {
+  protected function sushi() {
+    return '丼も好き';
+  }
+  public function tenpura($yasai) {
+    return $yasai.'は嫌い';
+  }
+}
+
+$osushi = new tyuusyouClass1;
+$otenpura = new tyuusyouClass2;
+
+echo $osushi->thisclass();
+echo "\n";
+
+echo $osushi->tenpura('なす');
+echo "\n";
+
+
+echo $otenpura->thisclass();
+echo "\n";
+
+echo $otenpura->tenpura('かぼちゃ');
+echo "\n";
+
+
+// コンストラクタ
+class  constClass {
+  protected $text;
+
+  // コンストラクタの定義
+  function construct() {
+    $this->text = "samurai enjineer";
+  }
+  // メソッドの定義
+  function show() {
+    echo $this->text;
+    echo "\n";
+  }
+}
+// インスタンスの生成
+$class = new constClass();
+
+// メソッドの呼び出し
+$class->show();
+
+
+
+// コンストラクタの練習
+class sapuri {
+  protected $contents;
+
+  function __construct() {
+    $this->contents = 'ビタミン';
+  }
+  function first() {
+    echo $this->contents;
+    echo "\n";
+  }
+}
+
+$vitamin = new sapuri();
+
+$vitamin->first();
+
+
+
+// 静的メンバの使用(static)
+class foo {
+  // 静的変数を作成
+  public static $val = 10;
+}
+// 静的変数の参照  インスタンスを生成しなくていい
+$value = foo::$val;
+echo $value;
+echo "\n";
+
+// static 練習
+class Shun {
+  public static $a = 'koyama';
+}
+$b = Shun::$a;
+echo $b;
+echo "\n";
+
+
+// 定数の使用(const)
+class contryClass {
+  const constname1 = 'japan';
+  const constname2 = 'america';
+  const constname3 = 'china';
+
+  function showConst() {
+    echo self::constname1;
+    echo "\n";
+    echo self::constname2;
+    echo "\n";
+    echo self::constname3;
+    echo "\n";
+  }
+
+}
+$Class = new contryClass();
+$Class-> showConst();
+
+
 ?>
