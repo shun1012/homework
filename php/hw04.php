@@ -386,5 +386,5 @@ class contryClass {
 $Class = new contryClass();
 $Class-> showConst();
 
-
+// コメント
 ?>
