@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/introduce', 'HelloController@introduce');
+
+Route::get('/cat', 'HelloController@neko');
+
+Route::get('/hometown', 'HelloController@ie');
+
+Route::get('/hobby', 'HelloController@syumi');
+
+Route::get('/works', 'HelloController@works');
+
+Route::get('/introduce', 'HelloController@back');
