@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ドットインストールを使ってのjquery学習</title>
+  </head>
+  <body>
+    <header>
+      <p>小山瞬</p>
+      <div id="mouseover" style="width:100px;height:100px;background:red;">
+      </div>
+      <div class="focus-blur">
+        <input type="text" id="name">
+      </div>
+      <div class="cahnge">
+        <select id="members" name="members">
+            <option>小山</option>
+            <option>中島</option>
+            <option>鈴木</option>
+            <option>佐藤</option>
+        </select>
+      </div>
+      <div class="select">
+        <input type="text" id="select" value="hello">
+        <p class="show"></p>
+      </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script>
+    <!-------------mouseover.mouseout---------->
+    $('#mouseover').click(function() {
+      alert('hi!!!!');
+    });
+
+    $('#mouseover').mouseover(function() {
+      $(this).css('background','blue');
+    });
+      $('#mouseover').mouseout(function() {
+        $(this).css('background','red');
+    });
+    <!-------------focus.blur---------->
+    $('#name')
+      .focus(function() {
+        $(this).css('background','green');
+      })
+      .blur(function() {
+        $(this).css('background','white')
+      });
+      <!-------------change---------->
+    $('#members').change(function() {
+      alert('changed!!!!!');
+    });
+      <!-------------select---------->
+    $('#select').select(function() {
+      $('.show').text("テキストボックスの中のテキストを選択しました");
+    });
+
+    
+    </script>
+  </body>
+</html>

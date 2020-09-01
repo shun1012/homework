@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/*共通*/
+body {
+  margin: 0 auto 0 auto;
+}
+/*ヘッダー*/
+#header{
+  display: flex;
+  height:123px;
+  width: 100%;
+}
+.header-contents{
+    text-align: center;
+    width: 100%;
+}
+.header-top {
+  height: 61.5px;
+}
+.header-under {
+  background-color: yellow;
+  height: 61.5px;
+  width: 100%;
+
+}
+.header-under ul li {
+    background-color: green;
+    width: 85px;
+    height: 61.5px;
+    float: left;
+
+    text-align: center;
+    margin-right: 10px;
+  }
+ul {
+  margin: 0;
+  height: 61.5px;
+  width: 900px;
+}
+li {
+  list-style: none;
+}
+/*メイン*/
+#main {
+  width: 900px;
+  display: flex;
+  margin: 100px 0 0 0 ;
+
+}
+.news {
+  width: 730px;
+  border: solid 2px #C0C0C0;
+  margin-bottom: 15px;
+}
+h1,h2 {
+  font-size: 1.5em;
+}
+.side {
+  margin-left: 15px;
+}
+h3 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.under {
+    border-bottom: solid 1px #C0C0C0;
+    margin-bottom: 50px;
+}
+/*footer*/
+.footer-top {
+  display: flex;
+}
+.footer-top p {
+  margin: 0;
+}
+.footer-top h4 {
+    margin: 0 0 20px 0;
+    width: 225px;
+    font-size: 1em;
+}
+.footer {
+  display: flex;
+}
+.footer-right {
+  margin-left: auto;
+}

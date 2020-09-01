@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>モーダルの</title>
+    <link rel="stylesheet" href="modaal.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="modaal.min.js"></script>
+  </head>
+  <body>
+    <div class="modaaaaal">
+      <a href="#modal" class="modal">Show</a>
+      <div id="modal" style="display:none;">
+         <p>モーダルできた！！！！！</p>
+      </div>
+    </div>
+    <div class="pulldownmenu">
+      <ul id="menu">
+        <li>メニュー１
+          <ul>
+            <li><a href="#">サブメニュー1-1</a></li>
+            <li><a href="#">サブメニュー1-2</a></li>
+            <li><a href="#">サブメニュー1-3</a></li>
+            <li><a href="#">サブメニュー1-4</a></li>
+            <li><a href="#">サブメニュー1-5</a></li>
+          </ul>
+        </li>
+        <li>メニュー２
+          <ul>
+            <li>サブメニュー2-1</li>
+            <li>サブメニュー2-2</li>
+            <li>サブメニュー2-3</li>
+            <li>サブメニュー2-4</li>
+            <li>サブメニュー2-5</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+
+  <script type="text/javascript">
+     <!-----------modal----------->
+     $('.modal').modaal();
+
+     <!-- pulldownmenu -->
+     $("#menu li").hover(function() {
+       $(this).children('ul').show();
+      }, function() {
+        $(this).children('ul').hide();
+      });
+   </script>
+  </body>
+</html>

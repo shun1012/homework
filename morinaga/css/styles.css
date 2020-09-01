@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/*全体*/
+body {
+  margin: 0;
+
+}
+h1 {
+  font-size: 1.5em;
+}
+img {
+  border-radius: 10px;
+}
+/*ヘッダー*/
+header {
+  width: 900px;
+  height: 150px;
+  margin: 0 auto;
+
+}
+.header-upper {
+  display: flex;
+  height: 100px;
+}
+/*フォームを右寄せにしたい*/
+.header-form {
+  display: flex;
+  margin: auto 0 auto 100px;
+  width: 600px;
+  text-align: right;
+}
+.header-form p {
+  margin: 0 10px 0 0;
+}
+.nav {
+  height: 50px;
+}
+.nav ul{
+  margin: 0;
+  padding: 0;
+  width: 900px;
+  height: 50px;
+  text-align: center;
+}
+/*線を１本消したい*/
+.nav ul li {
+  list-style: none;
+  display: inline-block;
+  width: 140px;
+  margin: auto 0 auto 0;
+  text-align: center;
+  border-left: dotted 1px #C0C0C0;
+  border-right: dotted 1px #C0C0C0;
+}
+.nav ul li+li {     /*隣接セレクタを使用*/
+  border-left: 0;
+  border-right: dotted 1px #C0C0C0;
+}
+/*メイン*/
+h1 {
+  margin: 0;
+  border-left: solid 3px red;
+}
+/*main nav*/
+.main-images {
+  text-align: center;
+  width: 100%;
+}
+.main {
+  background-color: bule;
+  width: 900px;
+  margin: 0 auto;
+}
+.nav2 {
+   display: flex;
+   flex-wrap: wrap;
+}
+.nav2-images {
+  margin: 10px auto 10px auto;
+  padding: 0 5px 0 5px;
+  border-left: dotted 5px #C0C0C0;
+  border-right: dotted 5px #C0C0C0;
+}
+.nav2-images+.nav2-images {  /*隣接セレクタを使用*/
+  border-left: 0;
+  border-right: dotted 5px #C0C0C0;
+}
+.nav2-images p{
+  text-align: center;
+  font-size: .8em;
+  width: 110px;
+  margin-top: 10px;
+}
+/*main-upper*/
+.main-upper {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: dotted 1px gray;
+}
+.main-upper h1 {
+  width: 900px;
+  margin: 25px 0 15px 0;
+  border-left: solid 3px red;
+  font-size: 1.5em;
+}
+.main-upper p {
+  width: 200px;
+}
+.main-upper-contents {
+  margin: 0 auto;
+}/*main-middle*/
+.main-middle {
+    border-bottom: dotted 1px gray;
+}
+.main-middle1 {
+  display: flex;
+  margin: 25px 0 15px 0;
+}
+.main-middle h1 {
+  width: 220px;
+  padding-right: 20px;
+  border-right: solid 1px gray;
+}
+.main-middle h2 {
+  margin-left: 30px;
+  font-size: .8em;
+  display: inline-block;
+
+}
+.main-middle-images {
+  background-color: yellow;
+  height: 250px;
+}
+.main-middle-images img {
+  margin: 25px 10px 25px 10px;
+}
+.main-middle-right {
+  margin: auto auto auto 10px;
+}
+/*mian-lower*/
+.main-lower {
+}
+.main-lower-1 {
+  display: flex;
+  margin: 25px 0 15px 0;
+}
+.topic h1{
+  width: 220px;
+  border-right: solid 1px gray;
+  padding-right: 20px;
+}
+.topic h2 {
+  font-size: .8em;
+  display: inline-block;
+  margin-left: 30px;
+}
+.main-lower-2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-lower-2 p {
+  width: 260px;
+}
+.topic-2 {
+  margin: 10px auto 10px auto;
+}
+.topic-2 p {
+  margin: 5px 0 5px 0;
+}
+
+/*footer*/
+#footer {
+  width: 100%;
+  margin: 0 auto;
+}
+/*footer-upper*/
+.footer-upper {
+  width: 900px;
+  margin: 0 auto;
+}
+.footer-upper h1,h2 {
+  display: inline-block;
+    margin-right: 20px;
+}
+.footer-upper h2 {
+  font-size: .8em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/*footer-middle*/
+.footer-middlelower {
+  width: 100%;
+  background-color: #FFFFCC;
+}
+.footer-middle {
+  font-size: .8em;
+  width: 900px;
+  margin: 0 auto;
+}
+.footer-middle h3 {
+  font-size: 1em;
+  margin: 25px 0 15px 0;
+}
+.footer-middle th {
+  width: 150px;
+  text-align: left;
+}
+.footer-middle td {
+  display: inline-table;
+}
+table {
+  border-bottom: solid 1px gray;
+  width: 640px;
+}
+.footer-middle-1 {
+  display: flex;
+}
+.footer-middle-right p {
+  margin: 0;
+}
+/*footer-lower*/
+.footer-lower {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  margin: 0 auto;
+}
+.footer-lower ul{
+  padding: 0;
+}
+.footer-lower li {
+  list-style: none;
+  display: inline-block;
+  font-size: .8em;
+  margin: 5px 5px 5px 0;
+  padding: 0;
+}
+
+.footer-lower-right p {
+    font-size: .4em;
+}
+.footer-lower-right {
+  text-align: right;
+}
+/*モーダル*/
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+}
+
+.modal-overlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(0,0,0,0.65);
+  z-index: 1;
+}
+
+.modal-open,
+.modal-close {
+  cursor: pointer;
+}

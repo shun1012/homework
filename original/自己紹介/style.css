@@ -1,0 +1,72 @@
+@charset "UTF-8";
+body {
+    background-color: #DDFFFF;
+    font-family: 'arial black';
+    color: #333;
+    margin: 0;
+}
+header {
+    width:800px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+.icon-picture img {
+    border-radius: 300px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #999999;
+    width: 200px;
+    height: 200px;
+}
+.container {
+    
+    display: flex;
+}
+h3{
+    font-size:1.8em;
+}
+p {
+    line-height: 1.6;
+    font-size: 1.5em;
+}
+.hometown, .hobby, .works {
+    display: flex;
+    margin-bottom: 30px;
+}
+.hometown-photo, .hobby-photo, .works-photo {
+    position: relative;
+    flex: 1 1 auto;
+}
+h2 {
+    position: absolute;
+    color: white;
+    font-size: 4em;
+    font-family: sans-serif;
+}
+.hobby-text, .hometown-text, .works-text {
+    margin-left: 20px;
+    flex: 0 0 336px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*スマートフォン向けcss*/
+@media (max-width: 767px) {
+    .about-block {
+    margin: 0 8px;
+    }
+    /*container横並び解除*/
+    .container {
+        display: block;
+    }
+    .hometown-photo, .hobby-photo, .works-photo {
+    margin-right: 0;
+    width: 100%;
+    }
+    .hobby-text, .hometown-text, .works-text {
+        width: 100%;
+    }
+    
+}

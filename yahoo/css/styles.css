@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+/*全体*/
+body {
+  background-color: #FFEEFF;
+  font-family: sans-serif;
+  margin: 0px auto;
+  width: 980px;
+}
+/*header*/
+#header {
+  width: 970px;
+  margin: 0 auto;
+  /*border-left: solid 1px gray;*/
+}
+/*header-section1*/
+.header-section1 {
+  background-color: #EEEEEE;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+}
+.header-section1-left {
+  margin: auto 0 auto 0;
+}
+.header-section1-left p {
+  margin: 0;
+}
+.header-section1-right p,form {
+  display: inline-block;
+  margin: auto 0;
+}
+/*header-section2*/
+.header-section2 {
+  height: 60px;
+  display: flex;
+  border-bottom: solid 1px gray;
+}
+.header-section2-left {
+  margin: auto 10px auto 0;
+}
+.header-section2-right {
+  margin: auto 0;
+}
+.header-section2-right p {
+  margin: 0;
+}
+/*header-section3*/
+.header-section3 {
+  background-color: #EEEEEE;
+  display:flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.header-section3-left {
+  margin: auto 0;
+}
+.header-section3-right {
+  height: 40px;
+}
+.header-section3-right ul{
+  list-style: none;
+  margin: 0;
+}
+.header-section3-right ul li {
+    float: left;
+    text-align: center;
+    margin: 0;
+}
+.header-section3-right ul li a {
+  color: #fff;
+  background-color: black;
+  display: block;
+  margin-left: 3px;
+  padding: 8px 10px;
+}
+/*nav1*/
+.nav1 {
+  background-color: red;
+  margin: 0;
+  height: 50px;
+}
+.nav1 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav1 ul li {
+  float: left;
+    height: 50px;
+    text-align: center;
+}
+.nav1 ul li a {
+  display: block;
+  margin: auto 0;
+  padding: 10px;
+}
+/*nav2*/
+.nav2 {
+  background-color: #CCFFFF;
+  margin: 0;
+  height: 50px;
+  border-bottom: solid 1px gray;
+}
+.nav2 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav2 ul li {
+  float: left;
+    height: 50px;
+    text-align: center;
+}
+.nav2 ul li a {
+  display: block;
+  margin: auto 0;
+  padding: 10px;
+}
+/*main*/
+#main {
+  display: flex;
+  width: 970px;
+  margin: 0 auto;
+}
+.main-left {
+  width: 70%;
+  border-left: solid 1px gray;
+  border-right: solid 1px gray;
+  border-bottom: solid 1px gray;
+}
+.main-right{
+  width: 30%;
+  margin: 0;
+}
+/*main-left-section1*/
+.main-cection1 {
+  display: flex;
+  border-bottom: solid 1px gray;
+}
+.main-section1-left {
+  width: 60%;
+}
+.main-section1-left ul {
+  margin: 10px 0;
+}
+.main-section1-left ul li {
+  margin: 10px 0;
+}
+.main-section1-right {
+  width: 40%;
+}
+.main-section1-right img {
+  margin: 10px;
+}
+/*main-left-section2*/
+.main-scection2 {
+  margin: 0 auto;
+}
+.main-scection2 h1 {
+  font-size: 1em;
+  margin-left: 10px;
+}
+.main-section2-upper img {
+  margin: 0 15px;
+}
+.main-section2-lower {
+  border-bottom: solid 1px gray;
+  height: 180px;
+}
+.main-section2-lower img {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+/*main-section3*/
+.main-section3 h2 {
+  font-size: 1em;
+  margin-left: 10px;
+}
+.main-contents {
+   border-bottom: solid 1px gray;
+  position: relative;
+  margin: 10px 0;
+}
+.main-contents img {
+  display:inline-block;
+  margin-left: 15px;
+}
+.main-contents p {
+  margin: 0;
+  width: 300px;
+  display:inline-block;
+  position: absolute;
+  top: 0;
+  left: 120px;
+}
+/*side-section1*/
+.side-section1 img  {
+  display: inline-block;
+  margin: 10px 0 10px 21px;
+}
+.side-section1 {
+  height: 560px;
+}
+/*side-section2*/
+.side-section2 {
+  background-color: red;
+  margin-left: 21px;
+}
+.side-section2 h3{
+   font-size: 1em;
+}
+.side-section2 img {
+  display: inline-block;
+}
+.side-section2 li{
+   border-bottom: solid 1px gray;
+}
+.side-section2 li #text{/*リストのテキストにcssを適用したい*/
+  width: 100px;
+}
+/*footer*/
+#footer {
+  width: 970px;
+  margin: 0 auto;
+}
+.footer-section1 {
+  background-color: #AAAAAA;
+  height: 300px;
+}
+.footer-images {
+  height: 250px;
+}
+.footer-images a {
+  width: 230px;
+}
+.footer-images img {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+/*footer-nav*/
+.footer-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;/*navを中央に寄せたい*/
+}
+.footer-nav ul li {
+  float: left;
+  height: 50px;
+}
+.footer-nav  ul li a  {
+  display:inline-block;
+  margin: auto 0;
+  padding-left: 10px;
+}
+.footer-list {
+  clear:both;
+}
+/*footer-list*/
+.footer-list {
+    text-align: center;
+    height: 20px;
+}
+.footer-list p {
+  margin: 0;
+  font-size: .8em;
+  display: inline-block;
+}
+.footer-section2 p {
+  text-align: center;
+  margin: 0;
+}
