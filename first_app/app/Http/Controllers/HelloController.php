@@ -7,26 +7,26 @@ use Illuminate\Http\Request;
 class HelloController extends Controller
 {
     public function introduce() {
-        return view('koyama');
+        return view('introduce/koyama');
     }
 
     public function neko() {
-        return view('cat');
+        return view('introduce/cat');
     }
 
     public function ie() {
-        return view('hometown');
+        return view('introduce/hometown');
     }
 
     public function syumi() {
-        return view('hobby');
+        return view('introduce/hobby');
     }
 
     public function works() {
-        return view('works');
+        return view('introduce/works');
     }
 
     public function back() {
-        return view('koyama');
+        return view('introduce/koyama');
     }
 }

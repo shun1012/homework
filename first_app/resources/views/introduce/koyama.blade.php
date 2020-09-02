@@ -18,7 +18,6 @@
                <div class="info">
                  <h1>小山　瞬</h1>
                  <p>31歳からプログラミング学習をはじめました。</p>
-                  <a href="{{ url('/cat') }}">猫紹介ページ</a>
                 </div>
           </div>
         </header>
