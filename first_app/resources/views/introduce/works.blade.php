@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>自己紹介ページ</title>
+        <title>自己紹介ページ/works</title>
+         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <div class="works">
@@ -24,6 +25,8 @@
                 現在は飲食店の経営をメインに事業を行っています。</p>
              </div>
         </div>
-     <a href="{{ url('/introduce') }}">back</a>
+        <div class="back">
+            <a href="{{ url('/introduce') }}">back</a>
+        </div>
      </body>
 </html>

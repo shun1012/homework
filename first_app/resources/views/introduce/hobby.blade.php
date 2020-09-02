@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>自己紹介ページ</title>
+        <title>自己紹介ページ/hobby</title>
+         <link rel="stylesheet" href="css/styles.css">
     </head>
 <body>
     <div class="hobby">
@@ -23,6 +24,8 @@
 
         </div>
     </div>
-    <a href="{{ url('/introduce') }}">back</a>
+    <div class="back">
+        <a href="{{ url('/introduce') }}">back</a>
+    </div>
 </body>
 </html>
