@@ -28,3 +28,7 @@ Route::get('/hobby', 'HelloController@syumi');
 Route::get('/works', 'HelloController@works');
 
 Route::get('/introduce', 'HelloController@back');
+
+
+// model練習
+Route::get('index', 'PersonController@index');
