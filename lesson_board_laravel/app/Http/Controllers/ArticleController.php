@@ -12,11 +12,11 @@ class ArticleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        return view('index');
-
-    }
+    // public function index()
+    // {
+    //     return view('index');
+    //
+    // }
 
     /**
      * Show the form for creating a new resource.
