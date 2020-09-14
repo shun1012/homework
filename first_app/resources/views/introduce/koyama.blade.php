@@ -11,7 +11,7 @@
          <link rel="stylesheet" href="css/styles.css">
      </head>
      <body>
-        <header>
+        <header
           <div class="container">
                <div class="icon">
                    <img src="images/mypic0.jpg" widht="200" height="200" alt="my picture">

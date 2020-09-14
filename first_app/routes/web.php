@@ -17,14 +17,20 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/introduce', 'HelloController@introduce');
+// Route::get('/introduce', 'HelloController@introduce');
+//
+// Route::get('/cat', 'HelloController@neko');
+//
+// Route::get('/hometown', 'HelloController@ie');
+//
+// Route::get('/hobby', 'HelloController@syumi');
+//
+// Route::get('/works', 'HelloController@works');
+//
+// Route::get('/introduce', 'HelloController@back');
+//
 
-Route::get('/cat', 'HelloController@neko');
+// model練習
+Route::get('/index','PersonController@index');
 
-Route::get('/hometown', 'HelloController@ie');
-
-Route::get('/hobby', 'HelloController@syumi');
-
-Route::get('/works', 'HelloController@works');
-
-Route::get('/introduce', 'HelloController@back');
+Route::get('/buy/index','BuyController@index');
