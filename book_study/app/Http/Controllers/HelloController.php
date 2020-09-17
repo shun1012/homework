@@ -8,15 +8,15 @@ use Illuminate\Support\Facades\DB;
 
 class HelloController extends Controller
 {
-    // public function index()
-    // {
-    //     return view('hello.index',['msg'=>'']);
-    // }
-    //
-    // public function post(Request $request)
-    // {
-    //     return view('hello.index',['msg'=>$request->msg]);
-    // }
+    public function index()
+    {
+        return view('hello.index',['msg'=>'']);
+    }
+
+    public function post(Request $request)
+    {
+        return view('hello.index',['msg'=>$request->msg]);
+    }
 
     // リスト3-22
     // public function index()
@@ -43,10 +43,10 @@ class HelloController extends Controller
     // }
 
     // リスト5-4
-    public function index(Request $request)
-    {
-        $items = DB::select('select *from buys');
-        return view('hello.index',['items'=>$items]);
-    }
+    // public function index(Request $request)
+    // {
+    //     $items = DB::select('select *from buys');
+    //     return view('hello.index',['items'=>$items]);
+    // }
 
 }
