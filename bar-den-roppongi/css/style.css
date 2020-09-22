@@ -614,7 +614,7 @@ html{
 .softdrinkList li,
 .cocktailList li{
 	font-size: 12px;
-	line-height: 18px;	
+	line-height: 18px;
 }
 
 .price_Softdrink{
@@ -767,7 +767,7 @@ html{
 .systemMainImage img{
 	width: 100%;
 	height: auto;
-	display: block;	
+	display: block;
 }
 
 .systemPageUnit{
@@ -902,7 +902,7 @@ html{
 }
 
 .taxList .tax{
-	margin-top: 20px;	
+	margin-top: 20px;
 }
 
 .taxList .tax:before{
@@ -1229,7 +1229,7 @@ html{
 	.pc_none{
 		display: none !important;
 	}
-	
+
 	.sp_none{
 		display: block !important;
 	}
@@ -1262,7 +1262,7 @@ html{
 	.mainImage{
 		background: url(../img/img_main.jpg) 20% center no-repeat;
 		background-size: cover;
-	}		
+	}
 
 	.mainImage img{
 		margin: 0 auto;
@@ -1553,7 +1553,7 @@ html{
 
 	.pointList h3{
 		width: 300px;
-		
+
 	}
 
 	.pointList p{
@@ -1572,7 +1572,7 @@ html{
 	.motherUnit p{
 		font-size: 14px;
 		line-height: 24px;
-		
+
 	}
 
 	.conditionTitle{
@@ -1619,3 +1619,42 @@ html{
 	}
 }
 
+
+
+
+
+/* news追加 */
+
+.news {
+	font-family: "Sawarabi Mincho", "Yu Mincho", "YuMincho", serif;
+	font-size: 20px;
+	background-color: red;
+	text-align: center;
+	width: 220px;
+	border: solid 1px #ffffff;
+	border-radius: 4px;
+	box-sizing: border-box;
+	height: 42px;
+	line-height: 40px;
+	display: block;
+	position: absolute;
+	top :50px;
+	left:50%;
+	transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+/* 閉店ページ */
+.topic1 {
+	text-align: center;
+	font-family: "Sawarabi Mincho", "Yu Mincho", "YuMincho", serif;
+}
+.contents{
+	line-height: 40px;
+	text-align: center;
+	font-family: "Sawarabi Mincho", "Yu Mincho", "YuMincho", serif;
+}
+.back-botton{
+	text-align: center;
+}
