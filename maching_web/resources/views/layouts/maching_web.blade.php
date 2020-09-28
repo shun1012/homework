@@ -17,7 +17,7 @@
                         <a href="{{'index'}}"><li>ホーム</li></a>
                         <a href="{{'price'}}"><li>料金プラン</li></a>
                         <a href="{{'flow'}}"><li>制作の流れ</li></a>
-                        <li>制作実績</li>
+                        <a href="{{'performance'}}"><li>制作実績</li></a>
                     </ul>
                 </div>
             </div>
@@ -31,7 +31,7 @@
                     <a href="{{'index'}}"><li>ホーム</li></a>
                     <a href="{{'price'}}"><li>料金プラン</li></a>
                     <a href="{{'flow'}}"><li>制作の流れ</li></a>
-                    <li>制作実績</li>
+                    <a href="{{'performance'}}"><li>制作実績</li></a>
                 </ul>
             </div>
             @yield('footer')

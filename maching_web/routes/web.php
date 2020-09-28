@@ -28,6 +28,10 @@ Route::get('/price', function () {
     return view('request/price');
 });
 
+Route::get('/performance', function () {
+    return view('request/performance');
+});
+
 Route::get('/contact',[ContactController::class,'get']);
 
 Route::post('/result',[ContactController::class,'post']);
