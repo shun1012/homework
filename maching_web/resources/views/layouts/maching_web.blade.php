@@ -3,14 +3,19 @@
     <head>
         <meta charset="utf-8">
         <title>@yield('title')</title>
+          <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         @section('main')
             <div class="header">
                 <div class="header-upper">
-                    <a href="index"><img src="images/logo.jpg" widht="100" height="100" alt="logo"></a>
-                    <a href="{{'request'}}"><p>仕事を依頼する</p></a>
-                    <a href="{{'contact'}}"><p>お問い合わせ</p></a>
+                    <div class="header-logo">
+                        <a href="index"><img src="images/prostep-logo.png" widht="100" height="100" alt="logo"></a>
+                    </div>
+                    <div class="header-contents">
+                        <a href="{{'request'}}"><p>制作を依頼する</p></a>
+                        <a href="{{'contact'}}"><p>お問い合わせ</p></a>
+                    </div>
                 </div>
                 <div class="header-lower">
                     <ul>
