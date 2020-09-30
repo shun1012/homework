@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ContactController;
 
-use App\Http\Controllers\RequestController;
+use App\Http\Controllers\OnegaiController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,6 +40,6 @@ Route::post('/result',[ContactController::class,'post']);
 //     return view('request/request');
 // });
 
-Route::get('/request',[RequestController::class,'get']);
+Route::get('/request',[OnegaiController::class,'get']);
 
-Route::post('/resultjob',[RequestController::class,'post']);
+Route::post('/resultjob',[OnegaiController::class,'post']);

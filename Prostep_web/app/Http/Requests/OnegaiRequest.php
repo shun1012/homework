@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class RequestRequest extends FormRequest
+class OnegaiRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -31,7 +31,8 @@ class RequestRequest extends FormRequest
         return [
             'name'=>'required',
             'mail'=>'email',
-            'type'=>'required',
+            'please_tel'=>'required',
+            'industry'=>'required',
             'page'=>'required',
 
         ];
@@ -40,8 +41,9 @@ class RequestRequest extends FormRequest
     {
         return [
             'name.required'=>'お名前は必ず入力してください',
-            'mail.email'=>'メールアドレスが必須です',
-            'type.required'=>'業種は必ず入力してください。',
+            'mail.email'=>'メールアドレスに誤りがあります',
+            'please_tel.required'=>'電話番号に誤りがあります',
+            'industry.required'=>'業種は必ず入力してください',
             'page.required'=>'ページ数を選択してください',
 
         ];

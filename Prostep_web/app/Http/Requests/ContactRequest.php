@@ -40,7 +40,7 @@ class ContactRequest extends FormRequest
     {
         return [
             'name.required'=>'お名前は必ず入力してください。',
-            'mail.email'=>'メールアドレスが必須です。',
+            'mail.email'=>'メールアドレスに誤りがあります',
             'inquiry_contents.required'=>'お問い合わせ内容を入力してください。',
 
         ];

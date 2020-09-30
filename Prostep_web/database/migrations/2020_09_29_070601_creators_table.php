@@ -18,17 +18,17 @@ class CreatorsTable extends Migration
             $table->string('creator_name',100);
             $table->string('katakana',100);
             $table->string('creator_mail',50);
-            $table->integer('creator_tel');
+            $table->string('creator_tel',11);
             $table->string('school_name',50);
             $table->string('skill',1000);
             $table->string('product_url',1000);  //サイトURL
             $table->string('creator_contents',1000);
-            $table->integer('pass');
-            $table->integer('confirm_pass');
-            $table->string('result',7);
+            $table->string('pass',50);
+            $table->string('confirm_pass',50);
+            $table->string('result',10);
             $table->integer('product_id');
-            $table->integer('number');
-            $table->integer('review');
+            $table->string('number',10);
+            $table->string('review',10);
             $table->timestamps();
         });
     }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class RequestsTable extends Migration
+class PleasesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,19 +13,19 @@ class RequestsTable extends Migration
      */
     public function up()
     {
-        Schema::create('requests', function (Blueprint $table) {
+        Schema::create('pleases', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name',100);
             $table->string('mail',50);
-            $table->integer('request_tel');
+            $table->string('please_tel',11);
             $table->string('industry',50);
             $table->integer('page');
-            $table->string('function',255);
-            $table->string('request_contents',1000);
-            $table->integer('product_id');
-            $table->integer('price');
-            $table->dateTime('delivery_date');
-            $table->integer('maintenance');
+            $table->string('function',255)->nullable();
+            $table->string('please_contents',1000)->nullable();
+            $table->integer('product_id')->nullable()->unsigned();
+            $table->string('price',7)->nullable();
+            $table->dateTime('delivery_date')->nullable();
+            $table->string('maintenance',3)->nullable();
             $table->timestamps();
         });
     }
@@ -37,6 +37,6 @@ class RequestsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('requests');
+        Schema::dropIfExists('pleases');
     }
 }
