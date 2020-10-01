@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ContactController;
 
-use App\Http\Controllers\RequestController;
+use App\Http\Controllers\OnegaiController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,12 +34,14 @@ Route::get('/performance', function () {
 
 Route::get('/contact',[ContactController::class,'get']);
 
+Route::post('/confirm',[ContactController::class,'confirm']);
+
 Route::post('/result',[ContactController::class,'post']);
 
 // Route::get('/request', function () {
 //     return view('request/request');
 // });
 
-Route::get('/request',[RequestController::class,'get']);
+Route::get('/request',[OnegaiController::class,'get']);
 
-Route::post('/resultjob',[RequestController::class,'post']);
+Route::post('/resultjob',[OnegaiController::class,'post']);
