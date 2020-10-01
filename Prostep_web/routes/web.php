@@ -34,6 +34,8 @@ Route::get('/performance', function () {
 
 Route::get('/contact',[ContactController::class,'get']);
 
+Route::post('/confirm',[ContactController::class,'confirm']);
+
 Route::post('/result',[ContactController::class,'post']);
 
 // Route::get('/request', function () {

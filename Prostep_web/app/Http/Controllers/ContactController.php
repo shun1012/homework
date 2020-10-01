@@ -14,7 +14,19 @@ class ContactController extends Controller
         return view('request/contact',['msg'=>'下記のフォームを入力してください。']);
     }
 
-    public function post(ContactRequest $request) {
+    public function confirm(ContactRequest $request)
+    {
+
+     //フォームから受け取ったすべてのinputの値を取得
+     $inputs = $request->all();
+
+     //入力内容確認ページのviewに変数を渡して表示
+     return view('request/confirm', [
+         'inputs' => $inputs,
+     ]);
+    }
+
+    public function post(Request $request) {
 
         $contact = new Contact();
         $contact -> name = $request-> name;
