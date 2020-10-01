@@ -29,6 +29,9 @@ class ContactController extends Controller
     public function post(Request $request) {
 
         $contact = new Contact();
+        // $contact -> name = "小山瞬";
+        // $contact -> mail = "oooooo@gmail.com";
+        // $contact -> inquiry_contents = "aaaaa";
         $contact -> name = $request-> name;
         $contact -> mail = $request-> mail;
         $contact -> inquiry_contents = $request-> inquiry_contents;

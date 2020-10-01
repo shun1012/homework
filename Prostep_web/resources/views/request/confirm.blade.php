@@ -9,6 +9,9 @@
 
 @section('content')
         <form method="POST" action=/result>
+        <input type="hidden" name="name" value={{$inputs['name']}}>
+        <input type="hidden" name="mail" value=<?php echo $inputs['mail'];?> >
+        <input type="hidden" name="inquiry_contents" value={{$inputs['inquiry_contents']}}>
         @csrf
 
 
