@@ -14,7 +14,7 @@
     @if(count($errors) > 0)
         <p>入力に問題があります。再度入力してください。</p>
     @endif
-    <form action="/resultjob" method="POST">
+    <form action="/confirmjob" method="POST">
         <table>
             @csrf
             @error('name')
@@ -59,8 +59,8 @@
                <option value="14" @if(old('area')=="option14") selected @endif>14</option>
                <option value="15" @if(old('area')=="option15") selected @endif>15</option>
             </select></td></tr>
-            <tr><th>付けたい機能はありますか？</th><td><textarea placeholder="画像スライド・新着情報機能・ブログ機能・その他"　name="function"　cols="50" rows="5"></textarea></td></tr>
-            <tr><th>その他、不明点や気になることがありましたらご記入ください</th><td><textarea name="request_contents"　cols="50" rows="5"></textarea></td></tr>
+            <tr><th>付けたい機能はありますか？</th><td><textarea placeholder="画像スライド・新着情報機能・ブログ機能・その他"　name="functions"　cols="50" rows="5"></textarea></td></tr>
+            <tr><th>その他、不明点や気になることがありましたらご記入ください</th><td><textarea name="please_contents"　cols="50" rows="5"></textarea></td></tr>
             <tr><th></th><td><input type="submit" value="send"></td></tr>
         </table>
     </form>

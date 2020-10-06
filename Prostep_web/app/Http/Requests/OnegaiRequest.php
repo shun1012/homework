@@ -13,7 +13,7 @@ class OnegaiRequest extends FormRequest
      */
     public function authorize()
     {
-        if ($this->path() == 'resultjob')
+        if ($this->path() == 'confirmjob')
         {
             return true;
         } else {

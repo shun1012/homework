@@ -20,7 +20,7 @@ class PleasesTable extends Migration
             $table->string('please_tel',11);
             $table->string('industry',50);
             $table->integer('page');
-            $table->string('function',255)->nullable();
+            $table->string('functions',255)->nullable();
             $table->string('please_contents',1000)->nullable();
             $table->integer('product_id')->nullable()->unsigned();
             $table->string('price',7)->nullable();

@@ -11,10 +11,22 @@ use  App\Models\Please;
 class OnegaiController extends Controller
 {
     public function get(Request $request) {
-        return view('request/request',['msg'=>'下記のフォームを入力してください。']);
+        return view('request/onegai/requestjob',['msg'=>'下記のフォームを入力してください。']);
     }
 
-    public function post(OnegaiRequest $request) {
+    public function confirmjob(OnegaiRequest $request)
+    {
+
+     //フォームから受け取ったすべてのinputの値を取得
+     $inputs = $request->all();
+
+     //入力内容確認ページのviewに変数を渡して表示
+     return view('request/onegai/confirmjob', [
+         'inputs' => $inputs,
+     ]);
+    }
+
+    public function post(Request $request) {
 
         $irai = new Please();
         $irai -> name = $request-> name;
@@ -22,10 +34,10 @@ class OnegaiController extends Controller
         $irai -> please_tel = $request-> please_tel;
         $irai -> industry = $request-> industry;
         $irai -> page = $request-> page;
-        $irai -> function = $request-> function;
+        $irai -> functions = $request-> functions;
         $irai -> please_contents = $request-> please_contents;
         $irai ->save();
 
-        return view('request/resultjob',['msg'=>'制作依頼を受付しました。ご連絡まで少々お待ちくださいませ。']);
+        return view('request/onegai/resultjob',['msg'=>'制作依頼を受付しました。ご連絡まで少々お待ちくださいませ。']);
     }
 }

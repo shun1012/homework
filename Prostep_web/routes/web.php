@@ -44,4 +44,7 @@ Route::post('/result',[ContactController::class,'post']);
 
 Route::get('/request',[OnegaiController::class,'get']);
 
+Route::post('/confirmjob',[OnegaiController::class,'confirmjob']);
+
+
 Route::post('/resultjob',[OnegaiController::class,'post']);
