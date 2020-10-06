@@ -1646,15 +1646,24 @@ html{
 }
 
 /* 閉店ページ */
+
 .topic1 {
 	text-align: center;
 	font-family: "Sawarabi Mincho", "Yu Mincho", "YuMincho", serif;
 }
+.topic1 h1 {
+	margin: 50px 0 50px 0;
+}
 .contents{
-	line-height: 40px;
+	line-height: 60px;
 	text-align: center;
 	font-family: "Sawarabi Mincho", "Yu Mincho", "YuMincho", serif;
+	font-size: 30px;
 }
 .back-botton{
 	text-align: center;
+}
+
+.back-botton{
+	margin-top: 100px;
 }
